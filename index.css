@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    background-color: var(--body-bg-color) ;
+    color: var(--text-color) ;
+    margin-left: 36px;
+}
+
+/*Paleta de cor*/
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+
+
+/*Layout da pagina*/
+#principal, aside{
+    height: 100vh;
+}
+
+#principal{
+    flex: 1;
+}
+
+aside{
+    background-image: url(./images/read_news\ 1.jpg);
+    background-position: right;
+    background-size: cover;
+    height: 710px;
+    flex-basis: 50%;
+ }
+
+ /*Logo*/
+#logo img{
+    height: 94px;
+    width: 389px;
+    margin: 50px 0 50px 0;
+}
+
+/*Conteúdo Principal*/
+header{
+    height: 102px;
+    width: 647px;
+}
+
+header h1{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    color: var(--title-color);
+}
+
+header p{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 14px;
+}
+
+/*Inserir E-mail*/
+form{
+    position: absolute;
+    width: 798px;
+    height: 84;
+    margin: 50px 0 50px 0;
+    
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside";
+}
+
+form p{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 14px;
+    grid-area: header;
+}
+
+input{
+    color: var(--form-color);
+    border-left: var(--title-color) 5px solid;
+    grid-area: main;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    padding-left: 9px;
+    width: 798px;
+    height: 48px;
+}
+
+button{
+    border: transparent;
+    grid-area: aside;
+    background-color: var(--bg-button-color);
+    width: 50px;
+}
+
+button img{
+    height: 24px;
+    width: 24px;
+}
+
+/*Link*/
+.container{
+    position: static;
+    margin-top: 230px;
+}
+
+.container a{
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif;
+    color: var(--bg-button-color);
+    display: flex;
+    align-items: center;
+}
+
+.container img{
+    height: 26.53px;
+    width: 24px;
+}
